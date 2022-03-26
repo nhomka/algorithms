@@ -10,5 +10,7 @@ def convert_from_base_10(num, base):
     
     return (''.join([digits[s.pop()] for _ in range(s.size())]))
 
-print(convert_from_base_10(25, 2))
+print(convert_from_base_10(17, 2))
+print(convert_from_base_10(45, 2))
+print(convert_from_base_10(96, 2))
 print(convert_from_base_10(26, 16))

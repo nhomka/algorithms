@@ -7,7 +7,10 @@ class Stack:
         self._items.append(val)
 
     def pop(self):
-        return None if not self._items else self._items.pop()
+        try:
+            return self._items.pop()
+        except IndexError as error:
+            raise error
 
     def peek(self):
         return None if not self._items else self._items[-1]
